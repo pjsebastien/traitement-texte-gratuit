@@ -1,0 +1,37 @@
+{
+  "sebastien": {
+    "name": "Sébastien",
+    "slug": "sebastien",
+    "role": "Fondateur de Margouillapp — Responsable éditorial",
+    "bio": "Sébastien pilote le site et la ligne éditoriale. Passionné par le web et les outils numériques, il teste et compare des dizaines de logiciels chaque mois pour dénicher les meilleures alternatives gratuites.",
+    "avatar": "avatars/sebastien",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/s%C3%A9bastien-pierrejean/",
+      "twitter": "https://x.com/sebastopolus1"
+    }
+  },
+  "lucas": {
+    "name": "Lucas",
+    "slug": "lucas",
+    "role": "Spécialiste bureautique & productivité",
+    "bio": "Ancien formateur en entreprise, Lucas teste des logiciels de bureautique depuis 2018. Il a formé plus de 500 personnes à la suite Office et à ses alternatives gratuites.",
+    "avatar": "avatars/lucas",
+    "links": {}
+  },
+  "sarah": {
+    "name": "Sarah",
+    "slug": "sarah",
+    "role": "Experte SEO & outils marketing",
+    "bio": "Consultante SEO freelance depuis 6 ans, Sarah décortique les outils du marché pour aider les indépendants et PME à gagner en visibilité sans exploser leur budget.",
+    "avatar": "avatars/sarah",
+    "links": {}
+  },
+  "mehdi": {
+    "name": "Mehdi",
+    "slug": "mehdi",
+    "role": "Développeur & passionné d'IA",
+    "bio": "Développeur web de formation, Mehdi suit de près les outils d'intelligence artificielle et les alternatives open source. Il écrit sur ce qui peut vraiment remplacer les logiciels payants.",
+    "avatar": "avatars/mehdi",
+    "links": {}
+  }
+}

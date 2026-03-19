@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash",
+      "Read",
+      "Write",
+      "Edit",
+      "Glob",
+      "Grep",
+      "WebFetch",
+      "WebSearch",
+      "Agent",
+      "TodoWrite",
+      "Bash(node scripts/screenshot.js \"https://www.wps.com/\" \"blog-screenshots/wps-office-home\")",
+      "WebFetch(domain:www.apres-lecole.fr)",
+      "Bash(node scripts/screenshot.js \"https://rankerfox.com/\" \"blog-screenshots/rankerfox-home\")",
+      "Bash(node scripts/screenshot.js \"https://rankerfox.fr/\" \"blog-screenshots/rankerfox-fr-home\")"
+    ],
+    "defaultMode": "bypassPermissions",
+    "additionalDirectories": [
+      "c:\\Users\\pjseb\\OneDrive\\Desktop\\traitement de texte gratuit\\xl",
+      "C:\\Users\\pjseb\\.claude"
+    ]
+  }
+}

@@ -1,0 +1,167 @@
+---
+title: "Les meilleures alternatives à Android"
+description: "Quelles alternatives à Android sans Google ? GrapheneOS, CalyxOS, LineageOS, /e/OS, Ubuntu Touch. Comparatif des OS mobiles libres et respectueux de la vie privée."
+slug: "alternative-android-open-source"
+date: "2026-03-19"
+updated: "2026-03-19"
+category: "alternatives"
+keywords: ["alternative android", "android sans google", "grapheneos", "calyxos", "lineageos", "os mobile libre"]
+featuredImage: "blog-thumbnails/thumb-alternative-android-open-source"
+---
+
+Android domine le marché mobile. Mais derrière le système, il y a Google. Collecte de données, services imposés, publicités ciblées. Certains utilisateurs veulent autre chose. Un OS mobile qui respecte leur vie privée, sans trackers ni compte Google obligatoire.
+
+Bonne nouvelle : des alternatives existent. Elles sont open source, gratuites, et tournent sur de vrais téléphones.
+
+<Callout type="tip" title="Le résumé en 10 secondes">
+**GrapheneOS** offre la meilleure sécurité (Pixel uniquement). **CalyxOS** équilibre vie privée et facilité d'usage. **LineageOS** supporte le plus de téléphones. **/e/OS** est prêt à l'emploi pour les non-techniciens. **Ubuntu Touch** propose un vrai Linux sur mobile.
+</Callout>
+
+<AuthorBox author="mehdi" />
+
+<CloudinaryImage src="blog-screenshots/grapheneos-home" alt="GrapheneOS, le système Android alternatif axé sécurité et vie privée" priority="true" />
+
+## GrapheneOS : la référence en sécurité
+
+<AffiliateLink href="https://grapheneos.org/">GrapheneOS</AffiliateLink> est un fork d'Android axé sur la sécurité. Le projet supprime tous les services Google et ajoute des protections que même Android stock ne propose pas : sandboxing renforcé, allocation mémoire durcie, permissions réseau par application.
+
+Le système ne fonctionne que sur les téléphones Google Pixel. C'est un choix délibéré : les Pixel offrent le meilleur support matériel pour le secure boot et les mises à jour de sécurité.
+
+L'installation passe par un outil web. Vous branchez votre Pixel, vous suivez les étapes, c'est fait en 10 minutes. Pas besoin de toucher au terminal.
+
+GrapheneOS permet d'installer les services Google dans un bac à sable isolé (sandboxed Google Play). Vos apps habituelles fonctionnent, mais Google n'a plus accès au système entier. C'est le meilleur des deux mondes.
+
+<Callout type="success" title="Les points forts">
+Sécurité de premier plan. Google Play en bac à sable. Mises à jour rapides. Installation facile via navigateur. Pas de télémétrie. Profils utilisateurs séparés pour compartimenter les usages.
+</Callout>
+
+<Callout type="warning" title="Le bémol">
+Limité aux Google Pixel (Pixel 6 et plus récents recommandés). Certaines apps bancaires refusent de fonctionner. Il faut acheter un Pixel neuf si vous n'en avez pas. Pas d'interface personnalisée, l'aspect reste proche d'Android stock.
+</Callout>
+
+## CalyxOS : vie privée sans compromis
+
+<AffiliateLink href="https://calyxos.org/">CalyxOS</AffiliateLink> est développé par le Calyx Institute, une organisation à but non lucratif. Le système cible aussi les Pixel (et quelques Motorola et Fairphone). Il intègre microG, une implémentation open source des services Google.
+
+Avec microG, les notifications push fonctionnent, le Play Store est remplacé par Aurora Store, et la plupart des apps tournent normalement. Vous n'avez pas besoin de bidouiller pour recevoir vos messages Signal ou utiliser votre app de transport.
+
+CalyxOS inclut un VPN intégré (via Calyx VPN ou Riseup VPN, gratuits), un pare-feu par application (Datura), et le navigateur Chromium dégooglisé.
+
+<Callout type="success" title="Les points forts">
+microG préinstallé (compatibilité apps). VPN gratuit intégré. Pare-feu par application. Mises à jour mensuelles. Plus simple à configurer que GrapheneOS pour un usage quotidien.
+</Callout>
+
+<Callout type="warning" title="Le bémol">
+Support limité aux Pixel, Fairphone 4/5 et quelques Motorola. Moins sécurisé que GrapheneOS (pas de sandboxing aussi strict). microG ne couvre pas 100 % des fonctions Google Play Services. Certaines apps de paiement ne marchent pas.
+</Callout>
+
+## LineageOS : le plus large support matériel
+
+<AffiliateLink href="https://lineageos.org/">LineageOS</AffiliateLink> descend de CyanogenMod, le projet de modding Android le plus connu. C'est la ROM custom avec le plus grand nombre de téléphones supportés. Samsung, OnePlus, Xiaomi, Motorola, Sony : la liste est longue.
+
+Le système est un Android pur, sans services Google. Pas de bloatware, pas de trackers, pas de pubs. Vous pouvez ajouter microG ou les Google Apps si vous en avez besoin, mais rien n'est imposé.
+
+L'installation demande un peu de technique. Il faut déverrouiller le bootloader, installer un recovery custom (TWRP ou Lineage Recovery) et flasher le système. Des guides existent pour chaque modèle supporté.
+
+LineageOS reçoit des mises à jour hebdomadaires. Le projet est actif depuis des années et la communauté est massive.
+
+<Callout type="success" title="Les points forts">
+Supporte des centaines de téléphones. Android pur sans bloatware. Mises à jour hebdomadaires. Grande communauté. Très personnalisable. Peut prolonger la vie d'un téléphone qui ne reçoit plus de mises à jour officielles.
+</Callout>
+
+<Callout type="warning" title="Le bémol">
+Installation technique (déverrouillage bootloader, flash). Pas de services Google par défaut (certaines apps ne fonctionnent pas sans). Pas de sandboxing avancé comme GrapheneOS. La qualité du support varie selon le modèle de téléphone.
+</Callout>
+
+## /e/OS : Android sans Google, prêt à l'emploi
+
+<AffiliateLink href="https://e.foundation/">/e/OS</AffiliateLink> (prononcé "i OS") est porté par la fondation Murena, créée par Gaël Duval (le fondateur de Mandrake Linux). Le projet cible le grand public. L'objectif : un Android dégooglisé que n'importe qui peut utiliser.
+
+/e/OS intègre microG, un app store propre (App Lounge qui agrège F-Droid et le Play Store), un cloud privé (Murena Cloud avec 1 Go gratuit), et des apps maison pour le mail, le calendrier, les notes. Tout fonctionne dès le premier démarrage.
+
+Vous pouvez acheter un téléphone avec /e/OS préinstallé sur la boutique Murena. Ou l'installer vous-même sur un téléphone compatible (la liste couvre Samsung, Fairphone, Google Pixel, OnePlus et d'autres).
+
+<Callout type="success" title="Les points forts">
+Prêt à l'emploi pour les non-techniciens. Cloud privé inclus. App Lounge (accès Play Store sans compte Google). Téléphones préinstallés disponibles à l'achat. Projet français. Interface soignée.
+</Callout>
+
+<Callout type="warning" title="Le bémol">
+microG peut poser des soucis de compatibilité avec certaines apps. Le cloud Murena gratuit est limité à 1 Go. Les téléphones préinstallés coûtent plus cher que le modèle nu. Les mises à jour de sécurité arrivent parfois en retard par rapport à GrapheneOS ou CalyxOS.
+</Callout>
+
+## Ubuntu Touch : du vrai Linux sur téléphone
+
+<AffiliateLink href="https://ubuntu-touch.io/">Ubuntu Touch</AffiliateLink> est maintenu par UBports, une communauté qui a repris le projet après l'abandon de Canonical. Ce n'est pas un fork d'Android. C'est un vrai système Linux, avec un noyau Linux, des apps natives en QML/Qt, et pas une ligne de code Android.
+
+L'interface est basée sur les gestes. Pas de boutons de navigation : vous glissez depuis les bords de l'écran. Les apps sont convergentes, elles s'adaptent si vous branchez le téléphone sur un écran externe (mode bureau).
+
+Le catalogue d'apps est limité. Pas de Play Store, pas de sideload d'APK. Les apps sont développées spécifiquement pour Ubuntu Touch ou tournent via des conteneurs web. C'est suffisant pour le mail, le web, la messagerie et les réseaux sociaux. Pas pour tout.
+
+<Callout type="success" title="Les points forts">
+Vrai Linux, pas un fork Android. Zéro dépendance à Google. Interface originale par gestes. Mode bureau (convergence). Projet communautaire actif. Respect total de la vie privée.
+</Callout>
+
+<Callout type="warning" title="Le bémol">
+Catalogue d'apps très limité. Pas d'apps Android. Support matériel restreint (principalement Fairphone, Pixel 3a, OnePlus, Vollaphone). Quelques bugs d'interface. L'appareil photo est souvent en retrait par rapport à Android. Pas adapté si vous dépendez d'apps spécifiques.
+</Callout>
+
+## postmarketOS : Linux minimaliste pour mobile
+
+<AffiliateLink href="https://postmarketos.org/">postmarketOS</AffiliateLink> est une distribution Linux Alpine adaptée aux téléphones. Le projet vise la durabilité : faire tourner un OS maintenu pendant 10 ans sur n'importe quel téléphone, même ancien.
+
+Vous choisissez votre interface : Phosh (GNOME), Plasma Mobile (KDE), Sxmo (tiling pour les bidouilleurs). Le système est léger. Très léger. Il peut tourner sur des téléphones vieux de 10 ans.
+
+postmarketOS n'est pas pour tout le monde. C'est un projet pour les passionnés de Linux qui veulent un contrôle total sur leur téléphone. L'installation passe par le terminal. Beaucoup de fonctions restent expérimentales selon le modèle.
+
+<Callout type="success" title="Les points forts">
+Vrai Linux Alpine. Ultra-léger. Supporte de vieux téléphones. Choix de l'interface (Phosh, Plasma Mobile, Sxmo). Durabilité logicielle sur le long terme. 100 % open source.
+</Callout>
+
+<Callout type="warning" title="Le bémol">
+Expérimental sur beaucoup de modèles. Installation technique (terminal). Pas d'apps Android. Support matériel inégal (caméra, GPS, appels parfois instables). Réservé aux utilisateurs avancés.
+</Callout>
+
+## Le comparatif
+
+<ComparisonTable data='{"headers":["GrapheneOS","CalyxOS","LineageOS","/e/OS","Ubuntu Touch","postmarketOS"],"highlights":[0,3],"rows":[{"label":"Prix","values":["Gratuit","Gratuit","Gratuit","Gratuit","Gratuit","Gratuit"]},{"label":"Base","values":["AOSP","AOSP","AOSP","AOSP","Linux","Linux Alpine"]},{"label":"Services Google","values":["Bac à sable","microG","Optionnel","microG","no","no"]},{"label":"Apps Android","values":["yes","yes","yes","yes","no","no"]},{"label":"Sécurité","values":["Maximale","Élevée","Moyenne","Moyenne","Moyenne","Variable"]},{"label":"Vie privée","values":["yes","yes","yes","yes","yes","yes"]},{"label":"Facilité install","values":["yes","yes","partial","yes","partial","no"]},{"label":"Support matériel","values":["Pixel only","Pixel/FP/Moto","Large","Large","Limité","Expérimental"]},{"label":"Mises à jour","values":["Rapides","Mensuelles","Hebdo","Mensuelles","Irrégulières","Variables"]}]}' />
+
+<ProsConsBox
+  pros='["Vous voulez la meilleure sécurité → GrapheneOS","Vous cherchez un bon équilibre vie privée/facilité → CalyxOS","Votre téléphone n\u0027est pas un Pixel → LineageOS","Vous êtes non-technicien et voulez du prêt à l\u0027emploi → /e/OS","Vous voulez un vrai Linux sur mobile → Ubuntu Touch","Vous aimez bidouiller et prolonger la vie d\u0027un vieux téléphone → postmarketOS"]'
+  cons='["GrapheneOS : limité aux Pixel, certaines apps bancaires bloquées","CalyxOS : microG pas compatible à 100 % avec toutes les apps","LineageOS : installation technique, sécurité moins poussée","e/OS : mises à jour de sécurité parfois en retard","Ubuntu Touch : très peu d\u0027apps disponibles","postmarketOS : expérimental, réservé aux bidouilleurs"]'
+/>
+
+<CtaBanner
+  title="Télécharger GrapheneOS"
+  description="L'OS mobile le plus sécurisé. Gratuit, open source, installable en 10 minutes sur un Pixel."
+  buttonText="Installer"
+  href="https://grapheneos.org/install/web"
+  variant="bold"
+/>
+
+<RelatedArticles slugs='["alternative-ios-mobiles","alternative-google-chrome","alternative-brave-vie-privee"]' />
+
+## Questions fréquentes
+
+### Peut-on utiliser un téléphone Android sans Google ?
+
+Oui. GrapheneOS, CalyxOS, LineageOS et /e/OS sont des systèmes basés sur Android mais sans les services Google. Vous gardez l'accès aux apps Android via des stores alternatifs comme Aurora Store ou F-Droid.
+
+### Quel est le meilleur OS mobile pour la vie privée ?
+
+GrapheneOS. Le système offre le sandboxing le plus strict, des mises à jour rapides et aucune télémétrie. CalyxOS arrive juste derrière avec un usage plus simple au quotidien grâce à microG.
+
+### Est-ce que les apps bancaires fonctionnent sans Google ?
+
+Ça dépend. Sur GrapheneOS avec Google Play en bac à sable, la plupart des apps bancaires fonctionnent. Sur CalyxOS avec microG, c'est plus aléatoire. Certaines banques vérifient l'intégrité du système (SafetyNet/Play Integrity) et bloquent les ROM custom.
+
+### Quel OS installer sur un vieux téléphone Android ?
+
+LineageOS est le meilleur choix grâce à son large support matériel. Vérifiez que votre modèle figure dans la liste des appareils supportés. postmarketOS est une option si vous voulez du pur Linux, mais le support reste expérimental.
+
+### /e/OS est-il vraiment utilisable au quotidien ?
+
+Oui. C'est l'alternative la plus accessible pour les utilisateurs non techniques. L'App Lounge donne accès aux apps du Play Store sans compte Google. Le mail, le calendrier, la navigation web, la messagerie : tout fonctionne. Les seuls problèmes viennent des apps qui exigent les vrais Google Play Services.
+
+### Ubuntu Touch peut-il remplacer Android ?
+
+Pour un usage basique (appels, SMS, web, mail, messagerie), oui. Pour un usage intensif avec des apps spécifiques (banque, transport, réseaux sociaux), non. Le catalogue d'apps est trop limité pour remplacer Android au quotidien pour la majorité des utilisateurs.

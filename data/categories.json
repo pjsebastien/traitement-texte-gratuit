@@ -1,0 +1,27 @@
+[
+  {
+    "slug": "traitement-de-texte",
+    "name": "Traitement de texte",
+    "description": "Logiciels de traitement de texte gratuits"
+  },
+  {
+    "slug": "alternatives",
+    "name": "Alternatives",
+    "description": "Alternatives gratuites aux logiciels populaires"
+  },
+  {
+    "slug": "outils-seo",
+    "name": "Outils SEO",
+    "description": "Outils SEO et marketing digital"
+  },
+  {
+    "slug": "productivite",
+    "name": "Productivité",
+    "description": "Outils de productivité et collaboration"
+  },
+  {
+    "slug": "ia",
+    "name": "Intelligence Artificielle",
+    "description": "Outils et logiciels d'IA"
+  }
+]

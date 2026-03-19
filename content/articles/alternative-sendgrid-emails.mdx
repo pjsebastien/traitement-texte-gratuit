@@ -1,0 +1,178 @@
+---
+title: "Les meilleures alternatives à SendGrid"
+description: "Quelles alternatives à SendGrid pour l'envoi d'emails transactionnels ? Brevo, Mailjet, Amazon SES, Postmark, Resend. Comparatif des services d'envoi d'emails."
+slug: "alternative-sendgrid-emails"
+date: "2026-03-19"
+updated: "2026-03-19"
+category: "alternatives"
+keywords: ["alternative sendgrid", "email transactionnel", "mailjet", "brevo smtp", "postmark", "api email"]
+featuredImage: "blog-thumbnails/thumb-alternative-sendgrid-emails"
+---
+
+SendGrid est l'un des services d'envoi d'emails transactionnels les plus utilisés. Confirmations de commande, réinitialisations de mot de passe, notifications, factures. Des millions de mails partent chaque jour via leur API. Mais depuis le rachat par Twilio en 2019, les retours se sont dégradés. Support quasi inexistant, comptes suspendus sans explication, interface vieillissante. Beaucoup de développeurs et d'entreprises cherchent une porte de sortie.
+
+<Callout type="tip" title="En bref">
+**Postmark** offre la meilleure délivrabilité du marché pour les emails transactionnels. **Brevo** est le choix français avec SMTP gratuit (300 emails/jour). **Mailjet** propose une API solide, des serveurs en Europe et un plan gratuit de 200 emails/jour. **Amazon SES** est le moins cher à grande échelle. **Resend** est le service pensé pour les développeurs modernes. **Mailtrap** excelle pour le testing en développement.
+</Callout>
+
+<AuthorBox author="mehdi" />
+
+<CloudinaryImage src="blog-screenshots/sendgrid-home" alt="SendGrid, plateforme d'envoi d'emails transactionnels de Twilio" priority="true" />
+
+## Pourquoi quitter SendGrid ?
+
+<AffiliateLink href="https://sendgrid.com/">SendGrid</AffiliateLink> traite plus de 100 milliards d'emails par mois. C'est un acteur majeur. Mais les problèmes se sont accumulés ces dernières années.
+
+- **Le support est devenu un point noir.** Depuis le rachat par Twilio, les tickets restent sans réponse pendant des jours. Les utilisateurs sur le plan gratuit n'ont quasiment aucun recours. Même les clients payants se plaignent de délais de réponse très longs.
+- **Les suspensions de compte arbitraires.** De nombreux utilisateurs rapportent des comptes bloqués du jour au lendemain, sans avertissement clair. Pour un service d'envoi d'emails transactionnels (confirmations de commande, mots de passe), c'est critique.
+- **L'interface a pris un coup de vieux.** Le dashboard SendGrid n'a pas beaucoup évolué. La navigation est confuse, les statistiques sont éparpillées, la gestion des templates manque de souplesse.
+- **Le pricing n'est plus compétitif.** Le plan Essentials commence à 19,95 $ par mois pour 50 000 emails. D'autres services font mieux pour moins cher.
+
+SendGrid reste fiable pour l'envoi brut. Mais l'expérience utilisateur et le support ne suivent plus.
+
+## Les meilleures alternatives à SendGrid
+
+### 1. Postmark, le spécialiste de la délivrabilité
+
+<AffiliateLink href="https://postmarkapp.com/">Postmark</AffiliateLink> ne fait qu'une chose : envoyer des emails transactionnels. Pas de marketing, pas de newsletters. Juste des emails déclenchés par une action utilisateur. Et ils le font très bien.
+
+Postmark affiche un temps de livraison moyen de moins de 10 secondes. La délivrabilité est parmi les meilleures du secteur, parce qu'ils refusent les emails marketing sur leur infrastructure. Résultat : leurs adresses IP ont une réputation excellente.
+
+L'API est bien documentée. Les templates sont gérés côté serveur avec un système de variables simple. Le dashboard affiche les statistiques en temps réel : bounces, ouvertures, clics, temps de livraison par fournisseur (Gmail, Outlook, Yahoo).
+
+<Callout type="success" title="Les points forts">
+Délivrabilité exceptionnelle grâce à la séparation stricte transactionnel/marketing. Temps de livraison rapide (moins de 10 secondes en moyenne). API claire et bien documentée. Dashboard de monitoring détaillé. Webhooks pour les événements (bounce, ouverture, clic). Support réactif, même sur les petits plans. DKIM, SPF et DMARC configurés facilement.
+</Callout>
+
+<Callout type="warning" title="Les limites">
+Pas d'envoi marketing. Si vous avez besoin d'envoyer des newsletters ET des emails transactionnels, il vous faudra deux services. Le prix est plus élevé que la moyenne : 15 $ par mois pour 10 000 emails. Pas de plan gratuit permanent (seulement 100 emails gratuits pour tester). L'interface est en anglais uniquement.
+</Callout>
+
+### 2. Brevo (SMTP), l'option française
+
+<CloudinaryImage src="blog-screenshots/brevo-home" alt="Brevo, plateforme française d'envoi d'emails transactionnels et marketing" />
+
+<AffiliateLink href="https://www.brevo.com/fr/">Brevo</AffiliateLink> (ex-Sendinblue) est une plateforme française qui propose à la fois l'envoi d'emails marketing et transactionnels. Le service SMTP transactionnel est inclus dans tous les plans, y compris le gratuit.
+
+Le plan gratuit permet d'envoyer 300 emails par jour via SMTP ou API. C'est suffisant pour un petit projet ou un site en phase de lancement. Les plans payants commencent à 19 euros par mois pour 20 000 emails.
+
+Brevo propose aussi un éditeur de templates, des webhooks, un suivi des événements et une intégration avec leur CRM. Les données sont hébergées en Europe, ce qui est un avantage pour la conformité RGPD.
+
+<Callout type="success" title="Les points forts">
+Plan gratuit (300 emails/jour). Serveurs en Europe, conforme RGPD. Interface et support en français. API REST et SMTP. Emails transactionnels et marketing sur la même plateforme. Webhooks et tracking d'événements. Templates avec éditeur visuel.
+</Callout>
+
+<Callout type="warning" title="Les limites">
+La limite de 300 emails/jour en gratuit bloque vite si votre app grandit. Le service transactionnel partage l'infrastructure avec le marketing, ce qui peut affecter la délivrabilité (contrairement à Postmark qui sépare les deux). L'API est fonctionnelle mais moins moderne que Resend ou Postmark. Le support sur le plan gratuit est lent.
+</Callout>
+
+### 3. Mailjet, l'API email européenne
+
+<AffiliateLink href="https://www.mailjet.com/fr/">Mailjet</AffiliateLink> est un service français (racheté par Sinch) spécialisé dans l'envoi d'emails via API et SMTP. Comme Brevo, Mailjet gère le transactionnel et le marketing. Mais l'accent est davantage mis sur l'API et l'infrastructure d'envoi.
+
+Le plan gratuit offre 200 emails par jour (6 000 par mois). Le plan Essential commence à 13,50 euros par mois pour 15 000 emails. Mailjet propose une API v3.1 bien structurée, un éditeur de templates collaboratif (plusieurs personnes peuvent modifier un template en même temps) et des statistiques d'envoi détaillées.
+
+<Callout type="success" title="Les points forts">
+Plan gratuit (200 emails/jour). API bien documentée avec SDK dans plusieurs langages. Éditeur de templates collaboratif (MJML). Serveurs en Europe. Interface en français. Gestion des sous-comptes pour les agences. Bon rapport qualité/prix sur les plans payants.
+</Callout>
+
+<Callout type="warning" title="Les limites">
+La délivrabilité est correcte mais pas au niveau de Postmark. Le plan gratuit inclut le logo Mailjet en pied d'email. L'interface a des lenteurs par moments. Le support est réservé aux plans payants. Certaines fonctions avancées (segmentation, A/B testing) sont limitées sur les premiers plans.
+</Callout>
+
+### 4. Amazon SES, le moins cher à volume
+
+<AffiliateLink href="https://aws.amazon.com/fr/ses/">Amazon SES</AffiliateLink> (Simple Email Service) est le service d'envoi d'emails d'AWS. C'est le choix évident si vous êtes déjà dans l'univers Amazon Web Services. Le tarif est imbattable : 0,10 $ pour 1 000 emails. Pas d'abonnement mensuel, vous payez uniquement ce que vous envoyez.
+
+Pour une startup qui envoie 100 000 emails transactionnels par mois, la facture tourne autour de 10 $. Chez SendGrid, le même volume coûterait au moins 19,95 $.
+
+Mais Amazon SES n'est pas un service "prêt à l'emploi". C'est une brique d'infrastructure. Il n'y a pas d'éditeur de templates visuel, pas de dashboard convivial, pas de gestion simplifiée des bounces. Il faut tout configurer soi-même : DKIM, SPF, réputation d'IP, gestion des listes de suppression.
+
+<Callout type="success" title="Les points forts">
+Prix le plus bas du marché (0,10 $/1 000 emails). Pas de minimum mensuel. Scalabilité quasi illimitée (AWS gère des milliards d'emails). Fiabilité de l'infrastructure Amazon. Intégration native avec les autres services AWS (Lambda, SNS, CloudWatch). Régions disponibles en Europe (Irlande, Francfort).
+</Callout>
+
+<Callout type="warning" title="Les limites">
+Complexe à configurer. Pas d'interface de gestion conviviale (tout passe par la console AWS ou l'API). Pas de templates visuels. Il faut gérer soi-même la réputation d'envoi, les bounces, les plaintes. Le support AWS est payant (sauf le plan Basic). Pas adapté si vous n'avez pas de développeur dans l'équipe.
+</Callout>
+
+### 5. Resend, le choix des développeurs modernes
+
+<AffiliateLink href="https://resend.com/">Resend</AffiliateLink> est un service d'envoi d'emails lancé par Zeno Rocha (créateur de Dracula Theme). L'idée : proposer une API d'envoi d'emails aussi simple que possible, avec une expérience développeur soignée. Le SDK est disponible en Node.js, Python, Ruby, Go, PHP, Elixir et Java.
+
+Le plan gratuit permet 100 emails par jour et 3 000 par mois. Le plan Pro commence à 20 $ par mois pour 50 000 emails. Resend supporte React Email, un framework open source pour créer des templates d'emails avec des composants React. Si vous développez en React ou Next.js, l'intégration est naturelle.
+
+<Callout type="success" title="Les points forts">
+API moderne et documentation excellente. SDK dans 7 langages. Intégration native avec React Email. Dashboard clair et minimaliste. Webhooks pour tous les événements. Support des domaines personnalisés, DKIM et DMARC. Plan gratuit pour démarrer. Temps de réponse du support correct, même en gratuit.
+</Callout>
+
+<Callout type="warning" title="Les limites">
+Service encore jeune (lancé en 2023). Le plan gratuit est limité à 100 emails/jour. Pas de templates visuels (vous codez vos emails). Pas de SMTP (API uniquement, le support SMTP est arrivé récemment mais reste basique). Moins de recul sur la délivrabilité à très grande échelle que Postmark ou Amazon SES. Interface en anglais.
+</Callout>
+
+### 6. Mailtrap, du testing à la production
+
+<AffiliateLink href="https://mailtrap.io/">Mailtrap</AffiliateLink> est connu des développeurs pour son service de testing d'emails. Vous envoyez des emails en développement, et au lieu de partir vers de vraies boîtes mail, ils arrivent dans une inbox de test. Pratique pour vérifier le rendu, les headers, le spam score.
+
+Mais Mailtrap propose aussi un service d'envoi en production. L'Email API permet d'envoyer des emails transactionnels avec un bon suivi : délivrabilité, bounces, ouvertures. Le plan gratuit offre 1 000 emails par mois en test et 1 000 en production. Le plan Business commence à 10 $ par mois.
+
+<Callout type="success" title="Les points forts">
+Environnement de test intégré (unique sur ce comparatif). Vérification du spam score avant envoi. API et SMTP. Dashboard de monitoring clair. Analyse des headers et du rendu HTML. Plan gratuit pour le testing et la production. Bon pour les équipes de développement qui veulent tester avant de passer en production.
+</Callout>
+
+<Callout type="warning" title="Les limites">
+Le service d'envoi en production est plus récent que le testing. Moins de retours utilisateurs sur la délivrabilité en production. Le plan gratuit est limité (1 000 emails/mois). L'interface peut être confuse entre les environnements de test et de production. Documentation moins fournie que Postmark ou Resend sur la partie envoi.
+</Callout>
+
+## Le comparatif
+
+<ComparisonTable data='{"headers":["Postmark","Brevo","Mailjet","Amazon SES","Resend","Mailtrap"],"highlights":[0,1],"rows":[{"label":"Plan gratuit","values":["100 emails (test)","300 emails/jour","200 emails/jour","62 000/mois (12 mois)","100 emails/jour","1 000 emails/mois"]},{"label":"Prix entrée","values":["15 $/mois","19 €/mois","13,50 €/mois","0,10 $/1 000 emails","20 $/mois","10 $/mois"]},{"label":"SMTP","values":["yes","yes","yes","yes","partial","yes"]},{"label":"API REST","values":["yes","yes","yes","yes","yes","yes"]},{"label":"Templates visuels","values":["partial","yes","yes","no","no","no"]},{"label":"Délivrabilité","values":["Excellente","Bonne","Bonne","Variable (à gérer)","Bonne","Correcte"]},{"label":"Transactionnel seul","values":["yes","no","no","yes","yes","yes"]},{"label":"Serveurs en Europe","values":["no","yes","yes","yes (Francfort)","no","yes"]},{"label":"Interface en français","values":["no","yes","yes","no","no","no"]},{"label":"Env. de test intégré","values":["no","no","no","no","no","yes"]},{"label":"SDK / Langages","values":["6+","5+","5+","10+","7","5+"]},{"label":"Webhooks","values":["yes","yes","yes","yes (SNS)","yes","yes"]}]}' />
+
+## Quel service choisir ?
+
+Tout dépend de votre profil et de vos volumes d'envoi.
+
+<ProsConsBox
+  pros='["Vous voulez la meilleure délivrabilité possible → Postmark","Vous cherchez une solution française avec SMTP gratuit → Brevo","Vous développez en Europe et voulez une bonne API → Mailjet","Vous envoyez des millions d emails et voulez le prix le plus bas → Amazon SES","Vous développez en React/Next.js et voulez une DX moderne → Resend","Vous avez besoin de tester vos emails avant l envoi → Mailtrap"]'
+  cons='["Postmark : pas de marketing, prix élevé, pas de plan gratuit permanent","Brevo : délivrabilité moyenne, 300 emails/jour en gratuit","Mailjet : logo en gratuit, support réservé aux payants","Amazon SES : complexe à configurer, pas d interface conviviale","Resend : service jeune, pas de SMTP complet, 100 emails/jour en gratuit","Mailtrap : envoi en production récent, moins de recul"]'
+/>
+
+Si vos emails transactionnels sont critiques (confirmations de paiement, mots de passe, notifications urgentes), <AffiliateLink href="https://postmarkapp.com/">Postmark</AffiliateLink> est le choix le plus sûr. La délivrabilité est au-dessus du lot.
+
+Pour un projet en croissance avec un budget serré, <AffiliateLink href="https://www.brevo.com/fr/">Brevo</AffiliateLink> ou <AffiliateLink href="https://www.mailjet.com/fr/">Mailjet</AffiliateLink> offrent un bon point de départ avec leurs plans gratuits et leurs serveurs européens. Si vous êtes déjà sur AWS et que vous avez un développeur capable de configurer le service, <AffiliateLink href="https://aws.amazon.com/fr/ses/">Amazon SES</AffiliateLink> est imbattable sur le prix.
+
+<CtaBanner
+  title="Tester Postmark gratuitement"
+  description="Envoyez vos 100 premiers emails transactionnels. Délivrabilité premium, API claire, support réactif."
+  buttonText="Créer un compte Postmark"
+  href="https://postmarkapp.com/"
+  variant="bold"
+/>
+
+## Questions fréquentes
+
+### SendGrid est-il toujours fiable ?
+
+<AffiliateLink href="https://sendgrid.com/">SendGrid</AffiliateLink> fonctionne toujours pour l'envoi d'emails. L'infrastructure technique est solide. Le problème se situe au niveau du support client et de la gestion des comptes. Les suspensions arbitraires et les temps de réponse du support sont les plaintes les plus fréquentes. Si vous avez un compte qui tourne bien, il n'y a pas de raison urgente de migrer. Mais si vous démarrez un nouveau projet, d'autres options sont plus fiables côté accompagnement.
+
+### Quelle est l'alternative la moins chère à SendGrid ?
+
+<AffiliateLink href="https://aws.amazon.com/fr/ses/">Amazon SES</AffiliateLink> est le moins cher à volume, avec 0,10 $ pour 1 000 emails. Pour les petits volumes, <AffiliateLink href="https://www.brevo.com/fr/">Brevo</AffiliateLink> (300 emails/jour gratuits) et <AffiliateLink href="https://www.mailjet.com/fr/">Mailjet</AffiliateLink> (200 emails/jour gratuits) permettent de démarrer sans rien payer.
+
+### Comment migrer depuis SendGrid ?
+
+La migration dépend de votre intégration. Si vous utilisez l'API SendGrid, il faut adapter vos appels à la nouvelle API (Postmark, Resend et Mailjet ont des guides de migration depuis SendGrid). Si vous utilisez le SMTP, changez les identifiants SMTP dans votre application (serveur, port, login, mot de passe). Pensez à configurer les enregistrements DNS (SPF, DKIM, DMARC) pour votre nouveau fournisseur avant de basculer.
+
+### Postmark ou SendGrid ?
+
+<AffiliateLink href="https://postmarkapp.com/">Postmark</AffiliateLink> est meilleur pour les emails transactionnels purs. Meilleure délivrabilité, support plus réactif, temps de livraison plus rapide. SendGrid a l'avantage de proposer aussi l'envoi marketing et des tarifs plus bas sur les très gros volumes. Si vous n'envoyez que du transactionnel, Postmark gagne sur tous les critères sauf le prix.
+
+### Peut-on utiliser Brevo ou Mailjet pour des emails transactionnels ?
+
+Oui. <AffiliateLink href="https://www.brevo.com/fr/">Brevo</AffiliateLink> et <AffiliateLink href="https://www.mailjet.com/fr/">Mailjet</AffiliateLink> proposent tous les deux l'envoi transactionnel via API et SMTP. L'avantage : vous pouvez gérer vos emails marketing et transactionnels depuis la même plateforme. L'inconvénient : l'infrastructure est partagée entre les deux types d'envoi, ce qui peut légèrement affecter la délivrabilité des emails transactionnels par rapport à un service dédié comme Postmark.
+
+### Resend est-il prêt pour la production ?
+
+<AffiliateLink href="https://resend.com/">Resend</AffiliateLink> est utilisé en production par des milliers d'entreprises. Le service est stable et l'API fiable. Le principal risque est lié à la jeunesse du projet : moins de recul sur la gestion de très gros volumes (millions d'emails par mois). Pour des volumes moyens (quelques dizaines de milliers d'emails par mois), Resend fait très bien le travail. L'intégration avec React Email est un vrai plus si votre stack technique s'y prête.
+
+<RelatedArticles slugs='["alternative-mailchimp-emailing","alternative-sendinblue"]' />
